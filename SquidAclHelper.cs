@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 
 using Craswell.Squid.Helper;
 using log4net;

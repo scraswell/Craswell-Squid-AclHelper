@@ -82,13 +82,13 @@
   <Import Project="..\packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets" Condition="Exists('..\packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets')" />
   <Import Project="..\packages\StyleCopPlus.MSBuild.4.7.49.5\build\StyleCopPlus.MSBuild.props" Condition="Exists('..\packages\StyleCopPlus.MSBuild.4.7.49.5\build\StyleCopPlus.MSBuild.props')" />
   <ItemGroup>
-    <ProjectReference Include="..\Craswell.Squid.Helper\Craswell.Squid.Helper.csproj">
+    <None Include="packages.config" />
+    <None Include="Settings.Stylecop" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Craswell-Squid-Helper\Craswell.Squid.Helper.csproj">
       <Project>{51DFE6C7-8328-48E1-8EB0-A03C9C3755DA}</Project>
       <Name>Craswell.Squid.Helper</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Settings.Stylecop" />
   </ItemGroup>
 </Project>
